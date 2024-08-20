@@ -149,7 +149,7 @@ function Home() {
         <h5 className="font-bold text-[28px] leading-[28px] text-center">
           Upcoming events
         </h5>
-        <div className="w-full flex flex-row justify-center">
+        <div className="w-full px-7 flex flex-row justify-center">
           <div className="pt-8 flex flex-col w-full max-w-[500px]">
             <img src="./Home/event-1.png" />
             <div className="pt-5">
