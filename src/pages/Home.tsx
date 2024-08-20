@@ -3,66 +3,83 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="font-inter">
+    <div className="font-inter flex flex-col items-center">
       <Header />
       {/* HERO */}
-      <div className="mb-12 px-7">
-        <img src="./Home/hero-image.png" draggable="false" />
-        <div className="flex flex-col mt-8">
-          <h1 className="text-[32px] font-bold leading-[37.8px]">
-            Grab your bike, head outside, and count on us to support your ride.
-          </h1>
-          <p className="text-sm leading-[22.4px] mt-4">
-            Whether commuting, on family rides, road cycling, or mountain
-            biking, rest assured that our Enduro products will keep you going.
-          </p>
+      <div className="mb-12 pt-[88px] w-full max-w-[1230px] px-7 flex flex-col md:items-center md:flex-row-reverse md:pt-[128px]">
+        <img
+          src="./Home/hero-image.png"
+          className="w-full md:max-w-[572px]"
+          draggable="false"
+        />
+        <div className="md:pr-10">
+          <div className="flex flex-col mt-8">
+            <h1 className="text-[32px] max-w-[572px] font-bold leading-[37.8px] lg:text-[56px] lg:leading-[60px]">
+              Grab your bike, head outside, and count on us to support your
+              ride.
+            </h1>
+            <p className="text-sm leading-[22.4px] mt-4 lg:mt-6 lg:text-lg lg:leading-[25px]">
+              Whether commuting, on family rides, road cycling, or mountain
+              biking, rest assured that our Enduro products will keep you going.
+            </p>
+          </div>
+          <button className="mt-8  text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
+            <p className="text-sm leading-[14px] pt-[1px] lg:text-base lg:leading-   font-semibold">
+              See products
+            </p>
+          </button>
         </div>
-        <button className="mt-8  text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
-          <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-            See products
-          </p>
-        </button>
       </div>
       {/* WHAT WE DO */}
-      <div className="py-20 px-7">
-        <h2 className="font-bold text-[28px] leading-[28px]">What we do</h2>
-        <p className="mt-3 font-light text-sm leading-[19.6px]">
-          At Enduro Ride, we focus on enhancing outdoor experiences and
-          <span className="font-medium">
-            {" "}
-            fostering a strong community of cyclists
-          </span>{" "}
-          through our quality products. We're here to support you on every ride.
-        </p>
+      <div className="py-20 px-7 lg:py-16">
+        <div className="w-full md:max-w-[1024px] md:text-center">
+          <h2 className="font-bold text-[28px] leading-[28px] md:text-[40px] md:leading-[40px]">
+            What we do
+          </h2>
+          <p className="mt-3 font-light text-sm leading-[19.6px] md:text-base md:leading-[22.4px]">
+            At Enduro Ride, we focus on enhancing outdoor experiences and
+            <span className="font-medium">
+              {" "}
+              fostering a strong community of <br className="hidden md:block" />{" "}
+              cyclists
+            </span>{" "}
+            through our quality products. We're here to support you on every
+            ride.
+          </p>
+        </div>
       </div>
       {/* GET TO KNOW US */}
-      <div className="pt-6 pb-20 px-7 flex flex-col">
-        <img src="./Home/get-to-know-us.png" draggable="false" />
-        <p className="text-[#757A7F] mt-10 font-semibold text-sm leading-[14px]">
-          About
-        </p>
-        <h3 className="mt-4 font-bold text-[28px] leading-[28px]">
-          Get to know us
-        </h3>
-        <p className="mt-3 flex flex-col gap-3 font-light text-sm leading-[19.6px]">
-          <p>
-            <span className="font-medium">
-              Born from a deep passion for cycling and community.
-            </span>{" "}
-            Developed in South Africa, now launching in the UK, our products
-            have been rigorously tested on challenging terrains, ensuring
-            durability and reliability.
-          </p>
-          <p>
-            We understand mountain biking as a lifestyle, creating gear that
-            enhances every ride. Our mission is to bring South African mountain
-            biking spirit to the UK, fostering a community of enthusiasts who
-            push boundaries.
-          </p>
-        </p>
-        <a className="text-[#E72323] mt-6 text-sm leading-[14px]">
-          See products
-        </a>
+      <div className="pt-6 pb-20 px-7 flex flex-col items-center md:pt-20 md:pb-[104px]">
+        <div className="md:flex md:flex-row max-w-[1230px] items-center">
+          <img className="w-full md:max-w-[572px]" src="./Home/get-to-know-us.png" draggable="false" />
+          <div className="md:pl-10 max-w-[572px]">
+            <p className="text-[#757A7F] mt-10 font-semibold text-sm leading-[14px]">
+              About
+            </p>
+            <h3 className="mt-4 font-bold text-[28px] leading-[28px]">
+              Get to know us
+            </h3>
+            <p className="mt-3 max-w-[572px] flex flex-col gap-3 font-light text-sm leading-[19.6px]">
+              <p>
+                <span className="font-medium">
+                  Born from a deep passion for cycling and community.
+                </span>{" "}
+                Developed in South Africa, now launching in the UK, our products
+                have been rigorously tested on challenging terrains, ensuring
+                durability and reliability.
+              </p>
+              <p>
+                We understand mountain biking as a lifestyle, creating gear that
+                enhances every ride. Our mission is to bring South African
+                mountain biking spirit to the UK, fostering a community of
+                enthusiasts who push boundaries.
+              </p>
+            </p>
+            <a className="text-[#E72323] mt-6 text-sm leading-[14px]">
+              See products
+            </a>
+          </div>
+        </div>
       </div>
       {/* PRODUCTS */}
       <div className="pt-10 pb-20 px-7 ">
