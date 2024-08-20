@@ -17,9 +17,9 @@ function FAQItem({
       <div className="flex flex-row justify-between">
         <p>{question}</p>
         {internalOpen ? (
-          <img src="./Home/minus-faq.svg" draggable="false" width="20"/>
+          <img src="/Home/minus-faq.svg" draggable="false" width="20"/>
         ) : (
-          <img src="./Home/plus-faq.svg" draggable="false" width="20" />
+          <img src="/Home/plus-faq.svg" draggable="false" width="20" />
         )}
       </div>
 

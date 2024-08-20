@@ -7,7 +7,7 @@ function Home() {
     <div className="font-inter flex flex-col items-center">
       <Header />
       {/* HERO */}
-      <div className="mb-12 pt-[88px] w-full max-w-[1230px] px-7 flex flex-col md:items-center md:flex-row-reverse md:pt-[128px]">
+      <div className="mb-12 px-7 pt-[88px] w-full max-w-[1230px] flex flex-col md:items-center md:flex-row-reverse md:pt-[128px]">
         <img
           src="./Home/hero-image.png"
           className="w-full md:max-w-[572px]"
@@ -24,11 +24,13 @@ function Home() {
               biking, rest assured that our Enduro products will keep you going.
             </p>
           </div>
-          <button className="mt-8  text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
-            <p className="text-sm leading-[14px] pt-[1px] lg:text-base lg:leading-[16px] font-semibold">
-              See products
-            </p>
-          </button>
+          <a href="/products">
+            <button className="mt-8  text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
+              <p className="text-sm leading-[14px] pt-[1px] lg:text-base lg:leading-[16px] font-semibold">
+                See products
+              </p>
+            </button>
+          </a>
         </div>
       </div>
       {/* WHAT WE DO */}
@@ -80,8 +82,13 @@ function Home() {
                 enthusiasts who push boundaries.
               </p>
             </div>
-            <a className="text-[#E72323] mt-6 text-sm leading-[14px]">
-              See products
+            <a href="/#products">
+              <p
+                id="products"
+                className="text-[#E72323] mt-6 text-sm leading-[14px]"
+              >
+                See products
+              </p>
             </a>
           </div>
         </div>
@@ -98,11 +105,10 @@ function Home() {
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
-                <a
-                  href="#"
-                  className="text-[#E72323] mt-3 text-sm leading-[14px]"
-                >
-                  See more
+                <a href="/products">
+                  <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
+                    See more
+                  </p>
                 </a>
               </div>
             </div>
@@ -113,11 +119,10 @@ function Home() {
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for road and gravel bikes.
                 </p>
-                <a
-                  href="#"
-                  className="text-[#E72323] mt-3 text-sm leading-[14px]"
-                >
-                  See more
+                <a href="/products">
+                  <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
+                    See more
+                  </p>
                 </a>
               </div>
             </div>
@@ -128,20 +133,24 @@ function Home() {
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
-                <a
-                  href="#"
-                  className="text-[#E72323] mt-3 text-sm leading-[14px]"
-                >
-                  See more
+                <a href="/products">
+                  <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
+                    See more
+                  </p>
                 </a>
               </div>
             </div>
           </div>
-          <button className="mt-10 text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
-            <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-              All products
-            </p>
-          </button>
+          <a href="/products">
+            <button
+              id="events"
+              className="mt-10 text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]"
+            >
+              <p className="text-sm leading-[14px] pt-[1px] font-semibold">
+                All products
+              </p>
+            </button>
+          </a>
         </div>
       </div>
       {/* EVENTS */}
@@ -165,7 +174,10 @@ function Home() {
                 21 September, 2024
               </p>
               <a href="#" target="_blank">
-                <p className="text-[#E72323] pt-4 font-semibold text-sm leading-[14px]">
+                <p
+                  id="testimonials"
+                  className="text-[#E72323] pt-4 font-semibold text-sm leading-[14px]"
+                >
                   See more
                 </p>
               </a>
