@@ -19,8 +19,9 @@ function Home() {
               Grab your bike and head outside.
             </h1>
             <p className="text-sm leading-[22.4px] mt-4 lg:mt-6 lg:text-lg lg:leading-[25px]">
-              Whether commuting, on family rides, road cycling, or mountain
-              biking, rest assured that our Enduro products will keep you going.
+              Whether commuting to the office, a family ride, road cycling or
+              mountain biking, our aim is to keep you riding with zero
+              interruptions.
             </p>
           </div>
           <a href="/products">
@@ -34,19 +35,19 @@ function Home() {
       </div>
       {/* WHAT WE DO */}
       <div className="py-20 px-7 lg:py-16">
-        <div className="w-full md:max-w-[1024px] md:text-center">
+        <div className="w-full md:max-w-[800px] md:text-center">
           <h2 className="font-bold text-[28px] leading-[28px] md:text-[40px] md:leading-[40px]">
-            What we do
+            Our Mission
           </h2>
           <p className="mt-3 font-light text-sm leading-[19.6px] md:text-base md:leading-[22.4px]">
-            At Enduro Ride, we focus on enhancing outdoor experiences and
-            <span className="font-medium">
-              {" "}
-              fostering a strong community of <br className="hidden md:block" />{" "}
-              cyclists
-            </span>{" "}
-            through our quality products. We're here to support you on every
-            ride.
+            … is to keep the ‘joy of cycling’ alive by delivering technically
+            superior tubeless tire sealant that keeps you rolling, not fixing.
+            We’re all about maximising your ride time and minimising those
+            punctures that slow you down. But it’s more than just sealing
+            tires—it’s about building stronger connections, whether with
+            yourself, your family, or your friends. By taking the stress out of
+            tire repairs, we help you focus on what really matters: the ride and
+            the relationships you build along the way.
           </p>
         </div>
       </div>
@@ -68,17 +69,21 @@ function Home() {
             <div className="mt-3 max-w-[572px] flex flex-col gap-3 font-light text-sm leading-[19.6px] lg:text-base lg:leading-[22.4px]">
               <p>
                 <span className="font-medium">
-                  Born from a deep passion for cycling and community.
+                  Born from a deep passion for cycling and community,
                 </span>{" "}
-                Developed in South Africa, now launching in the UK, our products
-                have been rigorously tested on challenging terrains, ensuring
-                durability and reliability.
+                Enduro Seal was developed in South Africa with the aim of
+                preventing riding downtime and the hassle associated with
+                puncture repairs while maximising ride time and the
+                relationships you build along the way.
               </p>
               <p>
-                We understand mountain biking as a lifestyle, creating gear that
-                enhances every ride. Our mission is to bring South African
-                mountain biking spirit to the UK, fostering a community of
-                enthusiasts who push boundaries.
+                Our products are enjoyed by cyclists from all backgrounds
+                ranging from the novice, fun-loving ‘every now and again’
+                cyclist to the seasoned professional counting on Enduro Seal to
+                keep them inflated over long distances. Having been rigorously
+                tested on the most challenging cycling terrains in South Africa,
+                ensuring durability and reliability, we are excited to make the
+                Enduro brand of products available to you.
               </p>
             </div>
             <a href="/#products">
@@ -97,44 +102,48 @@ function Home() {
         <div className="w-full max-w-[1230px]">
           <h4 className="font-bold text-[28px] leading-[28px]">Our products</h4>
           <div className="flex flex-col mt-8 gap-10 md:gap-4 md:flex-row">
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start md:w-1/3">
               <img src="./Home/enduro-seal-3.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">MTB Tire Seal</p>
+                <p className="font-semibold leading-4">
+                  MTB EnduroSeal - 250ml (Applicator Bottle)
+                </p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
-                <a href="/products">
+                <a href="/products/1">
                   <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                    See more
+                    Purchase
                   </p>
                 </a>
               </div>
             </div>
-            <div className="flex flex-col items-start">
-              <img src="./Home/enduro-seal-1.png" draggable="false" />
+            <div className="flex flex-col items-start md:w-1/3">
+              <img src="./Home/enduro-seal-4.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">Road Bike Tire Seal</p>
+                <p className="font-semibold leading-4">
+                  Road & Gravel - 250ml (Applicator Bottle)
+                </p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for road and gravel bikes.
                 </p>
-                <a href="/products">
+                <a href="/products/2">
                   <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                    See more
+                    Purchase
                   </p>
                 </a>
               </div>
             </div>
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start md:w-1/3">
               <img src="./Home/enduro-seal-2.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">MTB Tire Seal</p>
+                <p className="font-semibold leading-4">MTB EnduroSeal - 1L</p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
-                <a href="/products">
+                <a href="/products/3">
                   <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                    See more
+                    Purchase
                   </p>
                 </a>
               </div>
