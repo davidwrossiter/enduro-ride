@@ -7,17 +7,16 @@ function Home() {
     <div className="font-inter flex flex-col items-center">
       <Header />
       {/* HERO */}
-      <div className="mb-12 px-7 pt-[88px] w-full max-w-[1230px] flex flex-col md:items-center md:flex-row-reverse md:pt-[128px]">
+      <div className="mb-12 px-7 pt-[108px] w-full max-w-[1230px] flex flex-col-reverse md:items-center md:flex-row-reverse md:pt-[128px]">
         <img
           src="./Home/hero-image.png"
-          className="w-full md:max-w-[572px]"
+          className="w-full md:max-w-[572px] mt-10 md:mt-0"
           draggable="false"
         />
         <div className="md:pr-10 lg:pr-[88px]">
           <div className="flex flex-col mt-8 md:mt-0">
-            <h1 className="text-[32px] max-w-[572px] font-bold leading-[37.8px] lg:text-[56px] lg:leading-[60px]">
-              Grab your bike, head outside, and count on us to support your
-              ride.
+            <h1 className="text-[48px] max-w-[572px] font-bold leading-[46.8px] lg:text-[70px] lg:leading-[68px]">
+              Grab your bike and head outside.
             </h1>
             <p className="text-sm leading-[22.4px] mt-4 lg:mt-6 lg:text-lg lg:leading-[25px]">
               Whether commuting, on family rides, road cycling, or mountain
