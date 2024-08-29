@@ -64,7 +64,7 @@ function Products() {
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for road and gravel bikes.
                 </p>
-                <a href="products/3">
+                <a href="products/4">
                   <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
                     Purchase
                   </p>
