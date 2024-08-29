@@ -229,7 +229,7 @@ const ProductDetail = () => {
     "3": {
       name: "MTB EnduroSeal - 1L",
       description: "Premium tubeless sealant for mountain bikes.",
-      price: "£11.50",
+      price: "£28.50",
       image: "/Home/enduro-seal-2.png",
       faq: {
         one: {
@@ -338,7 +338,7 @@ const ProductDetail = () => {
     "4": {
       name: "Road & Gravel - 1L",
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
-      price: "£11.50",
+      price: "£28.50",
       image: "/Home/enduro-seal-5.png",
       faq: {
         one: {
