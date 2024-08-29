@@ -14,7 +14,9 @@ function Products() {
             <div className="flex flex-col items-start md:w-1/2 p-2">
               <img src="/Home/enduro-seal-3.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">MTB Tire Seal</p>
+                <p className="font-semibold leading-4">
+                  MTB EnduroSeal - 250ml (Applicator Bottle)
+                </p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
@@ -28,7 +30,9 @@ function Products() {
             <div className="flex flex-col items-start md:w-1/2 p-2">
               <img src="/Home/enduro-seal-4.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">Road Bike Tire Seal</p>
+                <p className="font-semibold leading-4">
+                  Road & Gravel - 250ml (Applicator Bottle)
+                </p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for road and gravel bikes.
                 </p>
@@ -42,7 +46,7 @@ function Products() {
             <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
               <img src="/Home/enduro-seal-2.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">MTB Tire Seal</p>
+                <p className="font-semibold leading-4">MTB EnduroSeal - 1L</p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
                   Premium tubeless sealant for mountain bikes.
                 </p>
@@ -56,9 +60,9 @@ function Products() {
             <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
               <img src="/Home/enduro-seal-5.png" draggable="false" />
               <div className="mt-5">
-                <p className="font-semibold leading-4">MTB Tire Seal</p>
+                <p className="font-semibold leading-4">Road & Gravel - 1L</p>
                 <p className="mt-2 font-light text-sm leading-[19.6px]">
-                  Premium tubeless sealant for mountain bikes.
+                  Premium tubeless sealant for road and gravel bikes.
                 </p>
                 <a href="products/3">
                   <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
