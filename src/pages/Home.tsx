@@ -205,7 +205,7 @@ function Home() {
         <div className="flex flex-col mt-10 gap-3 md:flex-row">
           <div className="rounded-lg border-[0.8px] gap-2 p-6 h-fit justify-center w-full max-w-[400px] flex flex-col bg-[#F9F9F9] border-[#E1E3E6]">
             <p className="text-sm leading-[19.6px] font-light">
-              "Go into any bike shop worht its spokes, and you'll see a big
+              "Go into any bike shop worth its spokes, and you'll see a big
               bottle of this stuff in the workshop… It's been tried and tested -
               and proven - on all of our roughest mountain-bike trails."
             </p>
