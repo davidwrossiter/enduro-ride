@@ -1,10 +1,17 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 function Products() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="flex flex-col h-screen justify-between">
-      <Header />
+      <Header
+        scrollPosition={scrollPosition}
+        setMobileMenuOpen={setMobileMenuOpen}
+        mobileMenuOpen={mobileMenuOpen}
+      />
       <div className="pt-[144px] pb-20 md:py-[200px] mx-7 flex flex-col items-center">
         <div className="w-full max-w-[1230px]">
           <h4 className="font-bold text-[28px] leading-[28px] md:text-[48px] leading-[48px]">
