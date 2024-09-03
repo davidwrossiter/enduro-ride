@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQItem from "../components/FAQItem";
 
 const ProductDetail = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { productId } = useParams<{ productId: string }>();
 
   // Mock data for demonstration. Replace with your actual data fetching logic.
@@ -454,7 +457,12 @@ const ProductDetail = () => {
 
   return (
     <div className="min-h-screen flex justify-between flex-col">
-      <Header />
+      <Header
+        scrollPosition={scrollPosition}
+        setScrollPosition={setScrollPosition}
+        setMobileMenuOpen={setMobileMenuOpen}
+        mobileMenuOpen={mobileMenuOpen}
+      />
       <div className="w-full flex justify-center">
         <div className="pt-[88px] mx-7 w-full max-w-[1230px] flex items-center md:items-start flex-col md:flex-row md:justify-between">
           <img
