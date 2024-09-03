@@ -459,6 +459,7 @@ const ProductDetail = () => {
     <div className="min-h-screen flex justify-between flex-col">
       <Header
         scrollPosition={scrollPosition}
+        setScrollPosition={setScrollPosition}
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />

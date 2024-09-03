@@ -21,6 +21,7 @@ function Home() {
     >
       <Header
         scrollPosition={scrollPosition}
+        setScrollPosition={setScrollPosition}
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />

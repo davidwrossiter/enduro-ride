@@ -9,6 +9,7 @@ function Products() {
     <div className="flex flex-col h-screen justify-between">
       <Header
         scrollPosition={scrollPosition}
+        setScrollPosition={setScrollPosition}
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
