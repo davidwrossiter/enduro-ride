@@ -279,8 +279,7 @@ function Home() {
             </button>
           </div>
         </div> */}
-
-          <FAQ />
+          {/*<FAQ /> */}
         </div>
 
         {/* FOOTER */}
