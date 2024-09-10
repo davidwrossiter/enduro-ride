@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import FAQ from "../components/FAQ";
+// import FAQ from "../components/FAQ";
 import { useState } from "react";
 
 function Home() {
@@ -179,7 +179,7 @@ function Home() {
                 className="mt-10 text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]"
               >
                 <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-                  All products
+                  See all products
                 </p>
               </button>
             </a>
@@ -279,8 +279,7 @@ function Home() {
             </button>
           </div>
         </div> */}
-
-          <FAQ />
+          {/*<FAQ /> */}
         </div>
 
         {/* FOOTER */}

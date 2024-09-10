@@ -76,10 +76,10 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
               Plans
             </a> */}
             <a href="/#testimonials" className="hover:cursor-pointer">
-              Testimonails
+              Testimonials
             </a>
-            <a href="/#faqs" className="hover:cursor-pointer">
-              FAQ
+            <a href="/contact" className="hover:cursor-pointer">
+              Contact
             </a>
           </div>
         </div>
@@ -161,13 +161,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
           >
             Testimonials
           </a>
-          <a
-            href="/#faqs"
-            className="w-full flex justify-start min-w-[200px]"
-            onClick={handleMenuClick}
-          >
-            FAQ
-          </a>
+
           <p className="font-semibold mt-3 min-w-[200px]">Quick links</p>
           <div className="flex flex-col gap-2 text-gray-400">
             <a href="/contact" className="min-w-[200px]">

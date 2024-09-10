@@ -9,16 +9,18 @@ function Footer() {
           <div className="flex flex-col">
             <p className="font-semibold">Links</p>
             <div className="flex mt-3 flex-col gap-3 text-sm leading-[16.8px]">
-              <p>Home</p>
-              <p>Products</p>
-              <p>Events</p>
-              <p>Reviews</p>
-              <p>Contact</p>
+              <a href="/">Home</a>
+              <a href="/#products">Products</a>
+              <a href="/#events">Events</a>
+              <a href="/#testimonials">Tesimonials</a>
+              <a href="/contact">Contact</a>
             </div>
           </div>
           <div className="flex flex-col">
             <p className="font-semibold">Contact us</p>
-            <p className="mt-3 text-sm leading-[16.8px]">Contact form</p>
+            <a href="/contact" className="mt-3 text-sm leading-[16.8px]">
+              Contact form
+            </a>
           </div>
           <div className="flex flex-col">
             <p className="font-semibold">Legal</p>

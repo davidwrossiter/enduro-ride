@@ -14,7 +14,7 @@ const ProductDetail = () => {
     "1": {
       name: "MTB EnduroSeal - 250ml (Applicator Bottle)",
       description: "Premium tubeless sealant for mountain bikes.",
-      price: "£11.50",
+      price: "£14.00",
       image: "/Home/enduro-seal-3.png",
       faq: {
         one: {
@@ -123,7 +123,7 @@ const ProductDetail = () => {
     "2": {
       name: "Road & Gravel - 250ml (Applicator Bottle)",
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
-      price: "£11.50",
+      price: "£14.00",
       image: "/Home/enduro-seal-4.png",
       faq: {
         one: {
@@ -232,7 +232,7 @@ const ProductDetail = () => {
     "3": {
       name: "MTB EnduroSeal - 1L",
       description: "Premium tubeless sealant for mountain bikes.",
-      price: "£28.50",
+      price: "£36.00",
       image: "/Home/enduro-seal-2.png",
       faq: {
         one: {
@@ -341,7 +341,7 @@ const ProductDetail = () => {
     "4": {
       name: "Road & Gravel - 1L",
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
-      price: "£28.50",
+      price: "£36.00",
       image: "/Home/enduro-seal-5.png",
       faq: {
         one: {
@@ -352,6 +352,224 @@ const ProductDetail = () => {
               Enduro Seal, ‘seat’ the{" "}
               <span className="font-bold">road / gravel bicycle</span> tyre onto
               the rim using a pump or air compressor (preferred).
+              <br />
+              <br />
+              When you hear a ‘pop’, you know your tyre is seated.
+              <br />
+              <br />
+              *Do not use a CO2 canister as this reduces the life of the
+              product.
+              <br />
+              <br />
+              <span className="font-bold">Second</span>, slowly unscrew the
+              valve core using a valve core tool{" "}
+              <span className="italic">
+                (included with the 250ml Applicator bottle)
+              </span>{" "}
+              thereby deflating the tyre.
+              <br />
+              <br />
+              <span className="font-bold">Third</span>, make sure to vigorously
+              shake the bottle of Enduro Seal{" "}
+              <span className="font-bold">(very important)</span>
+              <br />
+              <br />
+              <span className="font-bold">Fourth</span>, push the applicator
+              nozzle over the valve stem and dispense an initial 125ml of
+              EnduroSeal into the tyre by gently squeezing the applicator bottle
+              and using the measures on the bottle as guides.
+              <br />
+              <br />
+              <span className="font-bold">Fifth</span>, reinsert the valve core
+              using the valve core tool and inflate the tyre to the desired
+              pressure.
+              <br />
+              <br />
+              <span className="font-bold">Finally</span>, to ensure even
+              distribution of the product in the tyre and to seal any small
+              leaks, rotate the tyre in different directions.
+            </p>
+          ),
+        },
+        two: {
+          question: <p>Product Details</p>,
+          answer: (
+            <p className="py-2">
+              While we are fierce advocates of riding and the outdoors, caring
+              for our environment is even closer to our hearts. Making use of
+              natural fibres, we strive to keep our products as safe and
+              eco-friendly as possible.
+              <br />
+              <br />
+              Using natural fibre and certified distilled water, ensuring a
+              fixed (neutral) PH level is maintained, Enduro Seal is safe for
+              bicycle rims and spokes and is pollutant and mineral free.
+              <br />
+              <br />
+              EnduroSeal also contains propylene glycol, which is a non-toxic
+              substance considered to be safe for human use. A common ingredient
+              in a variety of beauty products, pharmaceuticals and indirect food
+              additives.
+            </p>
+          ),
+        },
+        three: {
+          question: <p>Features and Benefits</p>,
+          answer: (
+            <ul className="py-2">
+              <li>
+                Instant puncture repair up to 6.5mm in treads and sidewalls
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>
+                Remains liquid inside tyres for 3 - 7 months before top-up
+                required *In arid / dry conditions, more frequent monitoring may
+                be necessary
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>Effective in temperatures as low as -18°C</li>
+              <br />
+              {/* <br /> */}
+              <li>
+                Protects against damage to wheels and tyres with a natural
+                rubber latex formula
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>Non - corrosive</li>
+              <br />
+              {/* <br /> */}
+              <li>No balling of a rims inner latex-compound</li>
+            </ul>
+          ),
+        },
+      },
+    },
+    "5": {
+      name: "Road & Gravel - 2L",
+      description: "Premium Tubeless Sealant for Road and Gravel bikes.",
+      price: "£65.00",
+      image: "/Home/enduro-2L-road.png",
+      faq: {
+        one: {
+          question: <p>How to use</p>,
+          answer: (
+            <p className="py-2">
+              <span className="font-bold">First</span>, before you dispense any
+              Enduro Seal, ‘seat’ the{" "}
+              <span className="font-bold">road / gravel bicycle</span> tyre onto
+              the rim using a pump or air compressor (preferred).
+              <br />
+              <br />
+              When you hear a ‘pop’, you know your tyre is seated.
+              <br />
+              <br />
+              *Do not use a CO2 canister as this reduces the life of the
+              product.
+              <br />
+              <br />
+              <span className="font-bold">Second</span>, slowly unscrew the
+              valve core using a valve core tool{" "}
+              <span className="italic">
+                (included with the 250ml Applicator bottle)
+              </span>{" "}
+              thereby deflating the tyre.
+              <br />
+              <br />
+              <span className="font-bold">Third</span>, make sure to vigorously
+              shake the bottle of Enduro Seal{" "}
+              <span className="font-bold">(very important)</span>
+              <br />
+              <br />
+              <span className="font-bold">Fourth</span>, push the applicator
+              nozzle over the valve stem and dispense an initial 125ml of
+              EnduroSeal into the tyre by gently squeezing the applicator bottle
+              and using the measures on the bottle as guides.
+              <br />
+              <br />
+              <span className="font-bold">Fifth</span>, reinsert the valve core
+              using the valve core tool and inflate the tyre to the desired
+              pressure.
+              <br />
+              <br />
+              <span className="font-bold">Finally</span>, to ensure even
+              distribution of the product in the tyre and to seal any small
+              leaks, rotate the tyre in different directions.
+            </p>
+          ),
+        },
+        two: {
+          question: <p>Product Details</p>,
+          answer: (
+            <p className="py-2">
+              While we are fierce advocates of riding and the outdoors, caring
+              for our environment is even closer to our hearts. Making use of
+              natural fibres, we strive to keep our products as safe and
+              eco-friendly as possible.
+              <br />
+              <br />
+              Using natural fibre and certified distilled water, ensuring a
+              fixed (neutral) PH level is maintained, Enduro Seal is safe for
+              bicycle rims and spokes and is pollutant and mineral free.
+              <br />
+              <br />
+              EnduroSeal also contains propylene glycol, which is a non-toxic
+              substance considered to be safe for human use. A common ingredient
+              in a variety of beauty products, pharmaceuticals and indirect food
+              additives.
+            </p>
+          ),
+        },
+        three: {
+          question: <p>Features and Benefits</p>,
+          answer: (
+            <ul className="py-2">
+              <li>
+                Instant puncture repair up to 6.5mm in treads and sidewalls
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>
+                Remains liquid inside tyres for 3 - 7 months before top-up
+                required *In arid / dry conditions, more frequent monitoring may
+                be necessary
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>Effective in temperatures as low as -18°C</li>
+              <br />
+              {/* <br /> */}
+              <li>
+                Protects against damage to wheels and tyres with a natural
+                rubber latex formula
+              </li>
+              <br />
+              {/* <br /> */}
+              <li>Non - corrosive</li>
+              <br />
+              {/* <br /> */}
+              <li>No balling of a rims inner latex-compound</li>
+            </ul>
+          ),
+        },
+      },
+    },
+    "6": {
+      name: "MTB EnduroSeal - 2L",
+      description: "Premium tubeless sealant for mountain bikes.",
+      price: "£65.00",
+      image: "/Home/enduro-2L-mtb.png",
+      faq: {
+        one: {
+          question: <p>How to use</p>,
+          answer: (
+            <p className="py-2">
+              <span className="font-bold">First</span>, before you dispense any
+              Enduro Seal, ‘seat’ the{" "}
+              <span className="font-bold">mountain bicycle</span> tyre onto the
+              rim using a pump or air compressor (preferred).
               <br />
               <br />
               When you hear a ‘pop’, you know your tyre is seated.
