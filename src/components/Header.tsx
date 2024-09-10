@@ -76,7 +76,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
               Plans
             </a> */}
             <a href="/#testimonials" className="hover:cursor-pointer">
-              Testimonails
+              Testimonials
             </a>
             <a href="/#faqs" className="hover:cursor-pointer">
               FAQ
