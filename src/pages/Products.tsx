@@ -79,6 +79,34 @@ function Products() {
                 </a>
               </div>
             </div>
+            <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
+              <img src="/Home/enduro-2L-mtb.png" draggable="false" />
+              <div className="mt-5">
+                <p className="font-semibold leading-4">MTB EnduroSeal - 2L</p>
+                <p className="mt-2 font-light text-sm leading-[19.6px]">
+                  Premium tubeless sealant for mountain bikes.
+                </p>
+                <a href="products/6">
+                  <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
+                    Purchase
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
+              <img src="/Home/enduro-2L-road.png" draggable="false" />
+              <div className="mt-5">
+                <p className="font-semibold leading-4">Road & Gravel - 2L</p>
+                <p className="mt-2 font-light text-sm leading-[19.6px]">
+                  Premium tubeless sealant for road and gravel bikes.
+                </p>
+                <a href="products/5">
+                  <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
+                    Purchase
+                  </p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
