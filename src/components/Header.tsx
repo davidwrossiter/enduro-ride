@@ -57,7 +57,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
         >
           {/* Enduro Ride */}
           <img
-            src="/Home/enduro-ride-logo.svg"
+            src="/Home/enduro-ride-logo.png"
             className="w-[70px] md:w-[90px]"
           />
         </a>
