@@ -16,6 +16,7 @@ const ProductDetail = () => {
       description: "Premium tubeless sealant for mountain bikes.",
       price: "£14.00",
       image: "/Home/enduro-seal-3.png",
+      url: "https://buy.stripe.com/14k14IebFgB09Hi5kk",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -125,6 +126,7 @@ const ProductDetail = () => {
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
       price: "£14.00",
       image: "/Home/enduro-seal-4.png",
+      url: "https://buy.stripe.com/5kA9BeaZtbgGbPq7st",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -234,6 +236,7 @@ const ProductDetail = () => {
       description: "Premium tubeless sealant for mountain bikes.",
       price: "£36.00",
       image: "/Home/enduro-seal-2.png",
+      url: "https://buy.stripe.com/5kAaFiebF5WmaLmfZ0",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -343,6 +346,7 @@ const ProductDetail = () => {
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
       price: "£36.00",
       image: "/Home/enduro-seal-5.png",
+      url: "https://buy.stripe.com/6oEcNq1oTckK4mY7sv",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -452,6 +456,7 @@ const ProductDetail = () => {
       description: "Premium Tubeless Sealant for Road and Gravel bikes.",
       price: "£65.00",
       image: "/Home/enduro-2L-road.png",
+      url: "https://buy.stripe.com/fZe6p27NhdoO06IfZ3",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -561,6 +566,7 @@ const ProductDetail = () => {
       description: "Premium tubeless sealant for mountain bikes.",
       price: "£65.00",
       image: "/Home/enduro-2L-mtb.png",
+      url: "https://buy.stripe.com/eVabJmaZtdoO3iU4gk",
       faq: {
         one: {
           question: <p>How to use</p>,
@@ -732,9 +738,12 @@ const ProductDetail = () => {
               </div>
             </div> */}
             <div className="mt-6 flex flex-row gap-3">
-              <button className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-white text-sm leading-[14px] font-semibold">
-                Buy now
-              </button>
+              <a
+                href={product.url}
+                className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
+              >
+                <button>Buy now</button>
+              </a>
               {/* <button className="w-1/2 border rounded-xl py-[14px] text-[#E72323] border-[0.8] border-[#E72323] text-sm leading-[14px] font-semibold">
                 Add to cart
               </button> */}
