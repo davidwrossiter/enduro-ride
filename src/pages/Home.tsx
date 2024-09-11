@@ -1,11 +1,28 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import FAQ from "../components/FAQ";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const imageSources = [
+    "./Home/hero-image.png",
+    "./Home/hero-image-2.png",
+    "./Home/hero-image-3.png",
+    "./Home/hero-image-4.png",
+    "./Home/hero-image-5.png",
+    "./Home/hero-image-6.png",
+    "./Home/hero-image-7.png",
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * imageSources.length);
+    setCurrentImageIndex(randomIndex);
+  }, [imageSources.length]);
 
   // <div
   //   className={`${
@@ -31,7 +48,7 @@ function Home() {
           className={`mb-12 px-7 pt-[108px] w-full max-w-[1230px] flex flex-col-reverse md:items-center md:flex-row-reverse md:pt-[128px]`}
         >
           <img
-            src="./Home/hero-image.png"
+            src={imageSources[currentImageIndex]}
             className="w-full md:max-w-[572px] mt-10 md:mt-0"
             draggable="false"
           />

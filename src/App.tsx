@@ -8,10 +8,10 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Routes>
-      <Route path="/test" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
       <Route path="/products/:productId" element={<Product />} />
-      <Route path="/" element={<Maintenance />} />
+      // <Route path="/" element={<Maintenance />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
