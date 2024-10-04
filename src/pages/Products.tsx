@@ -51,7 +51,7 @@ function Products() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
+            {/*            <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
               <img src="/Home/enduro-seal-2.png" draggable="false" />
               <div className="mt-5">
                 <p className="font-semibold leading-4">MTB EnduroSeal - 1L</p>
@@ -79,7 +79,7 @@ function Products() {
                 </a>
               </div>
             </div>
-            {/*  <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
+            <div className="flex flex-col items-start md:mt-6 md:w-1/2 p-2">
               <img src="/Home/enduro-2L-mtb.png" draggable="false" />
               <div className="mt-5">
                 <p className="font-semibold leading-4">MTB EnduroSeal - 2L</p>
