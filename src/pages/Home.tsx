@@ -32,9 +32,8 @@ function Home() {
 
   return (
     <div
-      className={`${
-        mobileMenuOpen ? "overflow-hidden" : ""
-      }  font-inter flex flex-col items-center min-h-screen`}
+      className={`${mobileMenuOpen ? "overflow-hidden" : ""
+        }  font-inter flex flex-col items-center min-h-screen`}
     >
       <Header
         scrollPosition={scrollPosition}
@@ -143,7 +142,7 @@ function Home() {
               Our products
             </h4>
             <div className="flex flex-col mt-8 gap-10 md:gap-4 md:flex-row">
-              <div className="flex flex-col items-start md:w-1/3">
+              <div className="flex flex-col items-start md:w-1/2">
                 <img src="./Home/enduro-seal-3.png" draggable="false" />
                 <div className="mt-5">
                   <p className="font-semibold leading-4">
@@ -159,7 +158,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col items-start md:w-1/3">
+              <div className="flex flex-col items-start md:w-1/2">
                 <img src="./Home/enduro-seal-4.png" draggable="false" />
                 <div className="mt-5">
                   <p className="font-semibold leading-4">
@@ -175,7 +174,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col items-start md:w-1/3">
+              {/* <div className="flex flex-col items-start md:w-1/3">
                 <img src="./Home/enduro-seal-2.png" draggable="false" />
                 <div className="mt-5">
                   <p className="font-semibold leading-4">MTB EnduroSeal - 1L</p>
@@ -188,7 +187,7 @@ function Home() {
                     </p>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
             <a href="/products">
               <button
