@@ -744,6 +744,12 @@ const ProductDetail = () => {
               >
                 <button>Buy now</button>
               </a>
+              <a
+                href={product.url}
+                className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+              >
+                <button>Add to cart</button>
+              </a>
               {/* <button className="w-1/2 border rounded-xl py-[14px] text-[#E72323] border-[0.8] border-[#E72323] text-sm leading-[14px] font-semibold">
                 Add to cart
               </button> */}
