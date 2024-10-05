@@ -47,9 +47,8 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
       className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7 bg-opacity-80 backdrop-blur-md z-50 font-workSans`}
     >
       <p
-        className={`${
-          mobileMenuOpen ? "blur-sm" : "blur-none"
-        } w-full flex max-w-[1250px] justify-between items-center text-center text-black select-none transition-backdrop-blur duration-300`}
+        className={`${mobileMenuOpen ? "blur-sm" : "blur-none"
+          } w-full flex max-w-[1250px] justify-between items-center text-center text-black select-none transition-backdrop-blur duration-300`}
       >
         <a
           href="/"
@@ -81,6 +80,9 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
             <a href="/contact" className="hover:cursor-pointer">
               Contact
             </a>
+            <div>
+              <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
+            </div>
           </div>
         </div>
       </p>

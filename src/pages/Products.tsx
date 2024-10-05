@@ -15,7 +15,7 @@ function Products() {
       />
       <div className="pt-[144px] pb-20 md:py-[200px] mx-7 flex flex-col items-center">
         <div className="w-full max-w-[1230px]">
-          <h4 className="font-bold text-[28px] leading-[28px] md:text-[48px] leading-[48px]">
+          <h4 className="font-bold text-[28px] md:text-[48px] leading-[48px]">
             Shop Enduro
           </h4>
           <div className="flex flex-col mt-8 md:flex-row md:flex-wrap">

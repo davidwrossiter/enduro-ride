@@ -687,7 +687,7 @@ const ProductDetail = () => {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
-      <div className="w-full flex justify-center">
+      <div className="w-full flex pb-20 justify-center">
         <div className="pt-[88px] mx-7 w-full max-w-[1230px] flex items-center md:items-start flex-col md:flex-row md:justify-between">
           <img
             src={product.image}
@@ -743,6 +743,12 @@ const ProductDetail = () => {
                 className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
               >
                 <button>Buy now</button>
+              </a>
+              <a
+                href={product.url}
+                className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+              >
+                <button>Add to cart</button>
               </a>
               {/* <button className="w-1/2 border rounded-xl py-[14px] text-[#E72323] border-[0.8] border-[#E72323] text-sm leading-[14px] font-semibold">
                 Add to cart
