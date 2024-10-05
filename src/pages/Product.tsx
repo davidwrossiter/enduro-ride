@@ -687,7 +687,7 @@ const ProductDetail = () => {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
-      <div className="w-full flex justify-center">
+      <div className="w-full flex pb-20 justify-center">
         <div className="pt-[88px] mx-7 w-full max-w-[1230px] flex items-center md:items-start flex-col md:flex-row md:justify-between">
           <img
             src={product.image}
