@@ -1,0 +1,28 @@
+import { useState } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+function Cart({ cart, setCart }: any) {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  return (
+    <div className="flex flex-col h-screen items-center justify-between">
+
+      <div className="h-[80vh] pt-14 w-full border max-w-[1250px]">
+        <div className="w-full flex px-7 pt-20 flex-col">
+          {cart.map((item: any) => {
+            if (item === 0) {
+              return <div><p>{item}</p></div>
+            } else if (item === 1) {
+
+              return <div><p>{item}</p></div>
+            }
+        </div>
+      </div>
+
+
+
+      <Footer />
+    </div >)
+}
+
+export default Cart;

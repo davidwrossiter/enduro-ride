@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import API_URL from "../../apiConfig";
 
-export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
+export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart, setCart }: any) {
   gsap.registerPlugin(useGSAP);
   const container = useRef<HTMLDivElement>(null);
   const burgerMenuIcon = useRef<SVGSVGElement>(null);
@@ -80,9 +81,10 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
             <a href="/contact" className="hover:cursor-pointer">
               Contact
             </a>
-            <div>
+            <Link to="/cart" className="flex flex-row">
               <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
-            </div>
+              {cart ? <p className="text-[12px]">{cart.length}</p> : <p></p>}
+            </Link>
           </div>
         </div>
       </p>

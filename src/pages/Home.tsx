@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 // import FAQ from "../components/FAQ";
 import { useState, useEffect } from "react";
 
-function Home() {
+function Home({ cart, setCart }: any) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,6 +40,8 @@ function Home() {
         setScrollPosition={setScrollPosition}
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
+        cart={cart}
+        setCart={setCart}
       />
       {/* HERO */}
       <div className={`${mobileMenuOpen ? "blur-sm" : ""} `}>
@@ -160,7 +162,8 @@ function Home() {
                     </a>
                     <a
                       //href={product.url}
-                      className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+                      onClick={() => setCart((prevItems: any) => [...prevItems, 0])}
+                      className="w-1/2 border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
                     >
                       <button>Add to cart</button>
                     </a>
@@ -188,7 +191,8 @@ function Home() {
                     </a>
                     <a
                       //href={product.url}
-                      className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+                      onClick={() => setCart((prevItems: any) => [...prevItems, 1])}
+                      className="w-1/2 hover:cursor-pointer border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
                     >
                       <button>Add to cart</button>
                     </a>
@@ -322,7 +326,7 @@ function Home() {
         {/* FOOTER */}
       </div>
       <Footer />
-    </div>
+    </div >
   );
 }
 
