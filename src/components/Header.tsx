@@ -81,7 +81,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: any) {
               Contact
             </a>
             <div>
-              <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
+              {/* <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" /> */}
             </div>
           </div>
         </div>
