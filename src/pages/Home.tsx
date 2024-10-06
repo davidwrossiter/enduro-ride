@@ -151,11 +151,23 @@ function Home() {
                   <p className="mt-2 font-light text-sm leading-[19.6px]">
                     Premium tubeless sealant for mountain bikes.
                   </p>
-                  <a href="/products/1">
-                    <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                      Purchase
-                    </p>
-                  </a>
+                  <div className="mt-6 flex flex-row gap-3">
+                    <a
+                      href="https://buy.stripe.com/14k14IebFgB09Hi5kk"
+                      className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
+                    >
+                      <button>Buy now</button>
+                    </a>
+                    <a
+                      //href={product.url}
+                      className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+                    >
+                      <button>Add to cart</button>
+                    </a>
+                    {/* <button className="w-1/2 border rounded-xl py-[14px] text-[#E72323] border-[0.8] border-[#E72323] text-sm leading-[14px] font-semibold">
+                Add to cart
+              </button> */}
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col items-start md:w-1/2">
@@ -167,11 +179,20 @@ function Home() {
                   <p className="mt-2 font-light text-sm leading-[19.6px]">
                     Premium tubeless sealant for road and gravel bikes.
                   </p>
-                  <a href="/products/2">
-                    <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                      Purchase
-                    </p>
-                  </a>
+                  <div className="mt-6 flex flex-row gap-3">
+                    <a
+                      href="https://buy.stripe.com/5kA9BeaZtbgGbPq7st"
+                      className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
+                    >
+                      <button>Buy now</button>
+                    </a>
+                    <a
+                      //href={product.url}
+                      className="w-1/2 border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
+                    >
+                      <button>Add to cart</button>
+                    </a>
+                  </div>
                 </div>
               </div>
               {/* <div className="flex flex-col items-start md:w-1/3">
@@ -189,7 +210,7 @@ function Home() {
                 </div>
               </div> */}
             </div>
-            <a href="/products">
+            {/*       <a href="/products">
               <button
                 id="events"
                 className="mt-10 text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]"
@@ -198,7 +219,7 @@ function Home() {
                   See all products
                 </p>
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
         {/* EVENTS */}
