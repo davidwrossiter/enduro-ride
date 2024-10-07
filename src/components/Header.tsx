@@ -51,8 +51,8 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
         className={`${mobileMenuOpen ? "blur-none" : "blur-none"
           } w-full flex max-w-[1250px] justify-between items-center text-center text-black select-none transition-backdrop-blur duration-300`}
       >
-        <a
-          href="/"
+        <Link
+          to="/"
           className="font-semibold leading-[140%] h-full flex items-center pb-[2px]"
         >
           {/* Enduro Ride */}
@@ -60,7 +60,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
             src="/Home/enduro-ride-logo.png"
             className="w-[70px] md:w-[90px]"
           />
-        </a>
+        </Link>
         <div className="flex flex-row justify-end w-full">
           <div className="hidden leading-[100%] items-center text-sm lg:flex text-black flex-row pl-10 gap-8">
             <a href="/" className="hover:cursor-pointer">
