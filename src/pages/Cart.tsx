@@ -14,11 +14,11 @@ function Cart({ cart, setCart }: any) {
 
   const generateUrl = async () => {
 
-    const url = 'http://localhost:8787/api/create-checkout-session';
+    const url = 'https://enduro-ride-worker.davyrossiter.workers.dev/api/create-checkout-session';
 
     const bodyObject = [
       { priceId: 0, quantity: cart.item_1 },
-      { priceId: 0, quantity: cart.item_2 },
+      { priceId: 1, quantity: cart.item_2 },
     ].filter(item => item.quantity > 0);
 
     try {
