@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import API_URL from "../../apiConfig";
 
-export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart, setCart }: any) {
+export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any) {
   gsap.registerPlugin(useGSAP);
   const container = useRef<HTMLDivElement>(null);
   const burgerMenuIcon = useRef<SVGSVGElement>(null);

@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+//import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import FAQ from "../components/FAQ";
 import { useState, useEffect } from "react";
 
 function Home({ cart, setCart }: any) {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  //const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const imageSources = [
@@ -28,6 +28,7 @@ function Home({ cart, setCart }: any) {
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * imageSources.length);
     setCurrentImageIndex(randomIndex);
+    setMobileMenuOpen(mobileMenuOpen);
   }, [imageSources.length]);
 
   // <div
