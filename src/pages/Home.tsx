@@ -63,7 +63,7 @@ function Home({ cart, setCart }: any) {
                 interruptions.
               </p>
             </div>
-            <a href="/products">
+            <a href="/#products">
               <button className="mt-8  text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]">
                 <p className="text-sm leading-[14px] pt-[1px] lg:text-base lg:leading-[16px] font-semibold">
                   See products

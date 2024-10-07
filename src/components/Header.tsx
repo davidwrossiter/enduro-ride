@@ -185,33 +185,43 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
         </div>
       </div>
 
-      <p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none lg:hidden align-end">
-        <button onClick={handleMenuClick}>
-          <svg
-            ref={burgerMenuIcon}
-            width="34"
-            height="10"
-            viewBox="0 0 34 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 1H33"
-              stroke="#272829"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M1 9H33"
-              stroke="#272829"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </p>
+      <div className="flex flex-row w-full">
+        <p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none lg:hidden align-end">
+          <Link to="/cart" className="flex flex-row">
+            <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
+            {cart.item_1 > 0 || cart.item_2 > 0 ? <p className="text-[12px]">!</p> : <p></p>}
+          </Link>
+        </p>
+
+        <p className="z-0 flex self-center w-fit justify-end ml-3 font-semibold text-center text-black select-none lg:hidden align-end">
+          <button onClick={handleMenuClick}>
+            <svg
+              ref={burgerMenuIcon}
+              width="34"
+              height="10"
+              viewBox="0 0 34 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1H33"
+                stroke="#272829"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1 9H33"
+                stroke="#272829"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </p>
+      </div>
+
     </div>
   );
 }
