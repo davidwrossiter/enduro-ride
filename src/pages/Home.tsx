@@ -43,7 +43,7 @@ function Home({ cart, setCart }: any) {
         }  font-inter flex flex-col items-center min-h-screen`}
     >
       {/* HERO */}
-      <div className={`${mobileMenuOpen ? "blur-sm" : ""} `}>
+      <div className={`${mobileMenuOpen ? "" : ""} `}>
         <div
           className={`mb-12 px-7 pt-[108px] w-full max-w-[1230px] flex flex-col-reverse md:items-center md:flex-row-reverse md:pt-[128px]`}
         >

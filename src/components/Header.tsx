@@ -48,7 +48,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
       className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7 bg-opacity-80 backdrop-blur-md z-50 font-workSans`}
     >
       <p
-        className={`${mobileMenuOpen ? "blur-sm" : "blur-none"
+        className={`${mobileMenuOpen ? "blur-none" : "blur-none"
           } w-full flex max-w-[1250px] justify-between items-center text-center text-black select-none transition-backdrop-blur duration-300`}
       >
         <a
@@ -113,6 +113,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
             </svg> */}
             {/* <p className="pl-2">wilson</p> */}
           </p>
+
           <button onClick={handleMenuClick} className="px-6 py-4 leading-6">
             <svg
               width="12"
@@ -130,6 +131,10 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
         </div>
 
         <div className="flex flex-col text-[#F7F9FC] pl-6 text-base gap-2 ">
+          <Link to="/cart" className="w-full flex justify-start min-w-[200px]">
+            <p>Cart</p>
+          </Link>
+
           <a
             href="/"
             className="w-full flex justify-start min-w-[200px]"
