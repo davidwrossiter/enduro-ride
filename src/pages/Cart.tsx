@@ -18,7 +18,7 @@ function Cart({ cart, setCart }: any) {
 
     const bodyObject = [
       { priceId: 0, quantity: cart.item_1 },
-      { priceId: 0, quantity: cart.item_2 },
+      { priceId: 1, quantity: cart.item_2 },
     ].filter(item => item.quantity > 0);
 
     try {
