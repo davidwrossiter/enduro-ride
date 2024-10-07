@@ -49,6 +49,10 @@ function Cart({ cart, setCart }: any) {
     generateUrl()
   }, [cart])
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col h-screen items-center justify-between">
       <div className="pt-[96px] text-wrap md:pt-[256px] max-w-[1250px] flex flex-col w-full px-7 ">
@@ -56,7 +60,7 @@ function Cart({ cart, setCart }: any) {
         <div className="flex flex-col w-full gap-2 mt-4">
 
           {cart.item_1 === 0 && cart.item_2 === 0 ?
-            <p className="text-2xl font-semibold">Your cart is empty, go checkout our products to add something to your cart</p> : <></>}
+            <p className="text-2xl font-semibold pb-[96px]">Your cart is empty, go checkout our products to add something to your cart</p> : <></>}
 
           {cart.item_1 > 0 ?
             <div className="flex flex-row w-full items-center justify-between border rounded-xl p-4 ">
@@ -96,7 +100,7 @@ function Cart({ cart, setCart }: any) {
         </div>
 
         {cart.item_1 > 0 || cart.item_2 > 0 ?
-          <div className="flex w-full justify-start mt-4">
+          <div className="flex w-full justify-start mt-4 pb-[96px]">
             <a href={checkoutLink}>
               <button className="border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold px-[14px] bg-[#E72323]">Checkout</button>
             </a>
