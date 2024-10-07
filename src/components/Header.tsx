@@ -83,7 +83,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart, setCar
             </a>
             <Link to="/cart" className="flex flex-row">
               <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
-              {cart ? <p className="text-[12px]">{cart.length}</p> : <p></p>}
+              {cart.item_1 > 0 || cart.item_2 > 0 ? <p className="text-[12px]">!</p> : <p></p>}
             </Link>
           </div>
         </div>

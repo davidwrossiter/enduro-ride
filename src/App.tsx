@@ -8,7 +8,10 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Header from "./components/Header";
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState({
+    item_1: 0,
+    item_2: 0
+  });
   const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

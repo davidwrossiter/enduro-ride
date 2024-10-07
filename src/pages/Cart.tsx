@@ -1,120 +1,106 @@
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-interface CartProps {
-  cart: number[];
-  setCart: React.Dispatch<React.SetStateAction<number[]>>;
-}
+function Cart({ cart, setCart }: any) {
 
-interface CartItem {
-  id: number;
-  name: string;
-  image: string;
-  quantity: number;
-}
+  const [checkoutLink, setCheckoutLink] = useState();
 
-function Cart({ cart, setCart }: CartProps) {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [checkoutUrl, setCheckoutUrl] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
-
-  useEffect(() => {
-    const itemCounts = cart.reduce((acc, item) => {
-      acc[item] = (acc[item] || 0) + 1;
-      return acc;
-    }, {} as Record<number, number>);
-
-    const items: CartItem[] = Object.entries(itemCounts).map(([id, quantity]) => ({
-      id: parseInt(id),
-      name: id === "0" ? "MTB EnduroSeal - 250ml (Applicator Bottle)" : "Road & Gravel - 250ml (Applicator Bottle)",
-      image: id === "0" ? "./Home/enduro-seal-3.png" : "./Home/enduro-seal-4.png",
-      quantity
+  const updateCart = (itemKey: any, newCount: any) => {
+    setCart((prevCart: any) => ({
+      ...prevCart,
+      [itemKey]: newCount
     }));
+  };
 
-    setCartItems(items);
-  }, [cart]);
+  const generateUrl = async () => {
 
-  useEffect(() => {
-    if (isLoading) {
-      handleCheckout();
-    }
-  }, [isLoading]);
+    const url = 'http://localhost:8787/api/create-checkout-session';
 
-  function handleCheckout() {
-    const cartItemsForCheckout = cartItems.map(item => ({
-      priceId: item.id,
-      quantity: item.quantity
-    }));
+    const bodyObject = [
+      { priceId: 0, quantity: cart.item_1 },
+      { priceId: 0, quantity: cart.item_2 },
+    ].filter(item => item.quantity > 0);
 
-    fetch('http://localhost:8787/api/create-checkout-session', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(cartItemsForCheckout)
-    })
-      .then(response => response.json())
-      .then(data => {
-        setCheckoutUrl(data.sessionUrl);
-        setIsLoading(false);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        setIsLoading(false);
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(bodyObject),
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data)
+
+      setCheckoutLink(data.sessionUrl)
+      return response;
+    } catch (error) {
+      console.error('Error creating checkout session:', error);
+      throw error;
+    }
+
   }
 
-  function updateQuantity(id: number, change: number) {
-    const newCartItems = cartItems.map(item =>
-      item.id === id ? { ...item, quantity: Math.max(0, item.quantity + change) } : item
-    ).filter(item => item.quantity > 0);
-
-    setCartItems(newCartItems);
-    setCart(newCartItems.flatMap(item => Array(item.quantity).fill(item.id)));
-  }
+  useEffect(() => {
+    generateUrl()
+  }, [cart])
 
   return (
     <div className="flex flex-col h-screen items-center justify-between">
-      <div className="h-[80vh] pt-14 px-7 w-full max-w-[1250px]">
-        <div className="w-full flex pt-20 flex-col gap-4">
-          {cartItems.map((item) => (
-            <div key={item.id} className="flex flex-row items-center gap-4">
-              <img src={item.image} className="w-[64px] h-[64px] rounded-md" alt={item.name} />
-              <p>{item.name}</p>
-              <div className="flex items-center">
-                <button onClick={() => updateQuantity(item.id, -1)} className="px-2 py-1 bg-gray-200 rounded-l">-</button>
-                <span className="px-4 py-1 bg-gray-100">{item.quantity}</span>
-                <button onClick={() => updateQuantity(item.id, 1)} className="px-2 py-1 bg-gray-200 rounded-r">+</button>
+      <div className="pt-[96px] md:pt-[256px] max-w-[1250px] flex flex-col w-full px-7 ">
+        <p className="font-bold text-3xl">Cart</p>
+        <div className="flex flex-col w-full gap-2 mt-4">
+
+          {cart.item_1 > 0 ?
+            <div className="flex flex-row w-full items-center justify-between border rounded-xl p-4 ">
+              <div className="flex flex-row items-center">
+                <img src="./Home/enduro-seal-3.png" className="w-[32px] mr-3 h-[32px] rounded-sm" />
+                <p className="w-[336px]">MTB EnduroSeal - 250ml (Applicator Bottle)</p>
+              </div>
+              <div className="flex gap-3 flex-row">
+                <p onClick={() => { updateCart('item_1', cart.item_1 + 1) }} className="select-none hover:cursor-pointer">+</p>
+                <p>{cart.item_1}</p>
+                <p onClick={() => updateCart('item_1', cart.item_1 - 1)} className="select-none hover:cursor-pointer">-</p>
+              </div>
+              <div>
+                <p onClick={() => updateCart('item_1', 0)} className="text-gray-500 select-none hover:cursor-pointer">x</p>
               </div>
             </div>
-          ))}
+            : <></>}
+
+          {cart.item_2 > 0 ?
+            <div className="flex flex-row w-full items-center justify-between border rounded-xl p-4 ">
+              <div className="flex flex-row items-center">
+                <img src="./Home/enduro-seal-4.png" className="w-[32px] mr-3 h-[32px] rounded-sm" />
+                <p className="w-[336px]">Road & Gravel - 250ml (Applicator Bottle)</p>
+              </div>
+              <div className="flex gap-3 flex-row">
+                <p onClick={() => { updateCart('item_2', cart.item_2 + 1) }} className="select-none hover:cursor-pointer">+</p>
+                <p>{cart.item_2}</p>
+                <p onClick={() => updateCart('item_2', cart.item_2 - 1)} className="select-none hover:cursor-pointer">-</p>
+              </div>
+              <div>
+                <p onClick={() => updateCart('item_2', 0)} className="text-gray-500 select-none hover:cursor-pointer" >x</p>
+              </div>
+            </div>
+            : <></>}
+
+
         </div>
 
-        <div className="mt-12">
-          {checkoutUrl ? (
-            <a
-              href={checkoutUrl}
-              className="w-fit border rounded-xl px-[14px] py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
-            >
-              Proceed to Checkout
-            </a>
-          ) : (
-            <button
-              onClick={() => setIsLoading(true)}
-              disabled={isLoading || cartItems.length === 0}
-              className="w-fit border rounded-xl px-[14px] py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
-            >
-              {isLoading ? 'Loading...' : 'Buy now'}
-            </button>
-          )}
+        <div className="flex w-full justify-start mt-4">
+          <a href={checkoutLink}>
+            <button className="border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold px-[14px] bg-[#E72323]">Checkout</button>
+          </a>
         </div>
-      </div>
 
+      </div >
       <Footer />
-    </div>
+    </div >
   );
 }
 

@@ -19,6 +19,12 @@ function Home({ cart, setCart }: any) {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const updateCart = (itemKey: any, newCount: any) => {
+    setCart((prevCart: any) => ({
+      ...prevCart,
+      [itemKey]: newCount
+    }));
+  };
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * imageSources.length);
     setCurrentImageIndex(randomIndex);
@@ -35,14 +41,6 @@ function Home({ cart, setCart }: any) {
       className={`${mobileMenuOpen ? "overflow-hidden" : ""
         }  font-inter flex flex-col items-center min-h-screen`}
     >
-      <Header
-        scrollPosition={scrollPosition}
-        setScrollPosition={setScrollPosition}
-        setMobileMenuOpen={setMobileMenuOpen}
-        mobileMenuOpen={mobileMenuOpen}
-        cart={cart}
-        setCart={setCart}
-      />
       {/* HERO */}
       <div className={`${mobileMenuOpen ? "blur-sm" : ""} `}>
         <div
@@ -162,7 +160,7 @@ function Home({ cart, setCart }: any) {
                     </a>
                     <a
                       //href={product.url}
-                      onClick={() => setCart((prevItems: any) => [...prevItems, 0])}
+                      onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
                       className="w-1/2 border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
                     >
                       <button>Add to cart</button>
@@ -191,7 +189,7 @@ function Home({ cart, setCart }: any) {
                     </a>
                     <a
                       //href={product.url}
-                      onClick={() => setCart((prevItems: any) => [...prevItems, 1])}
+                      onClick={() => { updateCart('item_2', cart.item_2 + 1) }}
                       className="w-1/2 hover:cursor-pointer border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
                     >
                       <button>Add to cart</button>
