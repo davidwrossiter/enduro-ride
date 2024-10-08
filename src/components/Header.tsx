@@ -4,7 +4,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import API_URL from "../../apiConfig";
 
-export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any) {
+export default function Header({
+  mobileMenuOpen,
+  setMobileMenuOpen,
+  cart,
+}: any) {
   gsap.registerPlugin(useGSAP);
   const container = useRef<HTMLDivElement>(null);
   const burgerMenuIcon = useRef<SVGSVGElement>(null);
@@ -48,8 +52,9 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
       className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7 bg-opacity-80 backdrop-blur-md z-50 font-workSans`}
     >
       <p
-        className={`${mobileMenuOpen ? "blur-none" : "blur-none"
-          } w-full flex max-w-[1250px] justify-between items-center text-center text-black select-none transition-backdrop-blur duration-300`}
+        className={`${
+          mobileMenuOpen ? "blur-none" : "blur-none"
+        } w-full flex max-w-[1250px] justify-between  items-center text-center text-black select-none transition-backdrop-blur duration-300`}
       >
         <Link
           to="/"
@@ -58,7 +63,8 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
           {/* Enduro Ride */}
           <img
             src="/Home/enduro-ride-logo.png"
-            className="w-[70px] md:w-[90px]"
+            className="w-[70px] min-w-[70px] md:w-[90px]"
+            width="70px"
           />
         </Link>
         <div className="flex flex-row justify-end w-full">
@@ -81,10 +87,6 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
             <a href="/contact" className="hover:cursor-pointer">
               Contact
             </a>
-            <Link to="/cart" className="flex flex-row">
-              <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
-              {cart.item_1 > 0 || cart.item_2 > 0 ? <p className="text-[12px]">!</p> : <p></p>}
-            </Link>
           </div>
         </div>
       </p>
@@ -97,21 +99,6 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
         <div className="flex flex-row justify-between">
           <p className="text-[#F7F9FC] flex font-semibold py-4 pl-6 min-w-[150px]">
             Enduro Ride
-            {/* <svg
-              className="border-[0.8px] border-[#414141] rounded-md"
-              width="32"
-              height="32"
-              viewBox="0 0 56 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="56" height="56" rx="8" fill="#1D1E1F" />
-              <path
-                d="M38.6322 18H45.7522L39.7122 38H31.5522L27.9122 25.72L24.3922 38H16.2722L10.1922 18H17.3522L20.7122 32.76L24.6322 18H31.3522L35.2322 32.76L38.6322 18Z"
-                fill="white"
-              />
-            </svg> */}
-            {/* <p className="pl-2">wilson</p> */}
           </p>
 
           <button onClick={handleMenuClick} className="px-6 py-4 leading-6">
@@ -184,12 +171,18 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
           </div>
         </div>
       </div>
-
       <div className="flex flex-row w-full">
-        <p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none lg:hidden align-end">
+        <p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none align-end">
           <Link to="/cart" className="flex flex-row">
-            <img src="/ShoppingCart.svg" className="w-[24px] h-[24px] cursor-pointer" />
-            {cart.item_1 > 0 || cart.item_2 > 0 ? <p className="text-[12px]">!</p> : <p></p>}
+            <img
+              src="/ShoppingCart.svg"
+              className="w-[24px] h-[24px] cursor-pointer"
+            />
+            {cart.item_1 > 0 || cart.item_2 > 0 ? (
+              <p className="text-[12px]">!</p>
+            ) : (
+              <p></p>
+            )}
           </Link>
         </p>
 
@@ -221,7 +214,6 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, cart }: any)
           </button>
         </p>
       </div>
-
     </div>
   );
 }
