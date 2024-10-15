@@ -156,12 +156,12 @@ function Home({ cart, setCart }: any) {
                     Premium tubeless sealant for mountain bikes.
                   </p>
                   <div className="mt-6 flex flex-row gap-3">
-                    <a
+                    {/*                    <a
                       href="https://buy.stripe.com/14k14IebFgB09Hi5kk"
                       className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
                     >
                       <button>Buy now</button>
-                    </a>
+                    </a> */}
                     <div className="w-1/2 relative">
                       {notifications['item_1'] && <Notification />}                      <a
                         onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
@@ -182,12 +182,12 @@ function Home({ cart, setCart }: any) {
                     Premium tubeless sealant for road and gravel bikes.
                   </p>
                   <div className="mt-6 flex flex-row gap-3">
-                    <a
+                    {/* <a
                       href="https://buy.stripe.com/5kA9BeaZtbgGbPq7st"
                       className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
                     >
                       <button>Buy now</button>
-                    </a>
+                    </a> */}
                     <div className="w-1/2 relative">
                       {notifications['item_2'] && <Notification />}
 
