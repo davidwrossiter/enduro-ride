@@ -229,7 +229,7 @@ function Home({ cart, setCart }: any) {
           </div>
         </div>
         {/* EVENTS */}
-        <div className="flex flex-col items-center pt-6 pb-20  max-w-[1230px] w-full">
+        {/* <div className="flex flex-col items-center pt-6 pb-20  max-w-[1230px] w-full">
           <h5 className="font-bold text-[28px] leading-[28px] text-center">
             Upcoming events
           </h5>
@@ -259,7 +259,7 @@ function Home({ cart, setCart }: any) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* WHAT OTHERS ARE SAYING */}
         <div className="flex flex-col pt-6 pb-20 mx-7 ">
           <p className="text-sm leading-[14px] font-semibold">Testimonials</p>
