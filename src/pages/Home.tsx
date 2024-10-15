@@ -2,11 +2,12 @@
 import Footer from "../components/Footer";
 // import FAQ from "../components/FAQ";
 import { useState, useEffect } from "react";
+import Notification from "../components/Notification";
 
 function Home({ cart, setCart }: any) {
   //const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [notifications, setNotifications] = useState<{ [key: string]: boolean }>({});
   const imageSources = [
     "./Home/hero-image.png",
     "./Home/hero-image-2.png",
@@ -19,11 +20,13 @@ function Home({ cart, setCart }: any) {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const updateCart = (itemKey: any, newCount: any) => {
+  const updateCart = (itemKey: string, newCount: number) => {
     setCart((prevCart: any) => ({
       ...prevCart,
       [itemKey]: newCount
     }));
+    setNotifications(prev => ({ ...prev, [itemKey]: true }));
+    setTimeout(() => setNotifications(prev => ({ ...prev, [itemKey]: false })), 2000);
   };
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * imageSources.length);
@@ -159,18 +162,15 @@ function Home({ cart, setCart }: any) {
                     >
                       <button>Buy now</button>
                     </a>
-                    <a
-                      //href={product.url}
-                      onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
-                      className="w-1/2 border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
-                    >
-                      <button>Add to cart</button>
-                    </a>
-                    {/* <button className="w-1/2 border rounded-xl py-[14px] text-[#E72323] border-[0.8] border-[#E72323] text-sm leading-[14px] font-semibold">
-                Add to cart
-              </button> */}
-                  </div>
-                </div>
+                    <div className="w-1/2 relative">
+                      {notifications['item_1'] && <Notification />}                      <a
+                        onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
+                        className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                      >
+                        <button>Add to cart</button>
+                      </a>
+                    </div>
+                  </div>                </div>
               </div>
               <div className="flex flex-col items-start md:w-1/2">
                 <img src="./Home/enduro-seal-4.png" draggable="false" />
@@ -188,13 +188,16 @@ function Home({ cart, setCart }: any) {
                     >
                       <button>Buy now</button>
                     </a>
-                    <a
-                      //href={product.url}
-                      onClick={() => { updateCart('item_2', cart.item_2 + 1) }}
-                      className="w-1/2 hover:cursor-pointer border rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold"
-                    >
-                      <button>Add to cart</button>
-                    </a>
+                    <div className="w-1/2 relative">
+                      {notifications['item_2'] && <Notification />}
+
+                      <a
+                        onClick={() => { updateCart('item_2', cart.item_2 + 1) }}
+                        className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                      >
+                        <button>Add to cart</button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

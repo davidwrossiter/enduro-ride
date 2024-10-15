@@ -1,14 +1,24 @@
 import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 
+const Notification = () => (
+  <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md shadow-md">
+    Item added to cart!
+  </div>
+);
+
+
 function Cart({ cart, setCart }: any) {
   const [checkoutLink, setCheckoutLink] = useState();
+  const [showNotification, setShowNotification] = useState(false);
 
   const updateCart = (itemKey: any, newCount: any) => {
     setCart((prevCart: any) => ({
       ...prevCart,
       [itemKey]: newCount,
     }));
+    setShowNotification(true);
+    setTimeout(() => setShowNotification(false), 2000); // Hide after 2 seconds
   };
 
   const generateUrl = async () => {

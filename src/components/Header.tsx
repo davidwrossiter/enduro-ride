@@ -13,6 +13,7 @@ export default function Header({
   const container = useRef<HTMLDivElement>(null);
   const burgerMenuIcon = useRef<SVGSVGElement>(null);
   const [internalState, setInternalState] = useState(false);
+  const [totalItems, setTotalItems] = useState(0);
 
   const handleMenuClick = () => {
     if (mobileMenuOpen) {
@@ -47,14 +48,18 @@ export default function Header({
     // console.log(scrollPosition);
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    const newTotal = cart.item_1 + cart.item_2;
+    setTotalItems(newTotal);
+  }, [cart]);
+
   return (
     <div
       className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7 bg-opacity-80 backdrop-blur-md z-50 font-workSans`}
     >
       <p
-        className={`${
-          mobileMenuOpen ? "blur-none" : "blur-none"
-        } w-full flex max-w-[1250px] justify-between  items-center text-center text-black select-none transition-backdrop-blur duration-300`}
+        className={`${mobileMenuOpen ? "blur-none" : "blur-none"
+          } w-full flex max-w-[1250px] justify-between  items-center text-center text-black select-none transition-backdrop-blur duration-300`}
       >
         <Link
           to="/"
@@ -179,7 +184,7 @@ export default function Header({
               className="w-[24px] h-[24px] cursor-pointer"
             />
             {cart.item_1 > 0 || cart.item_2 > 0 ? (
-              <p className="text-[12px]">!</p>
+              <p className="text-[12px]">{totalItems}</p>
             ) : (
               <p></p>
             )}
