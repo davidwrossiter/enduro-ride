@@ -55,7 +55,7 @@ export default function Header({
 
   return (
     <div
-      className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7 bg-opacity-80 backdrop-blur-md z-50 font-workSans`}
+      className={`flex font-inter bg-white flex-row fixed top-0 w-full justify-center h-[52px] md:h-[62px] px-7  z-50 font-workSans`}
     >
       <p
         className={`${mobileMenuOpen ? "blur-none" : "blur-none"
@@ -73,7 +73,7 @@ export default function Header({
           />
         </Link>
         <div className="flex flex-row justify-end w-full">
-          <div className="hidden leading-[100%] items-center text-sm lg:flex text-black flex-row pl-10 gap-8">
+          <div className="hidden w-full leading-[100%] items-center text-sm lg:flex text-black flex-row pl-10 gap-8">
             <a href="/" className="hover:cursor-pointer">
               Home
             </a>
