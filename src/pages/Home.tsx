@@ -74,6 +74,7 @@ function Home({ cart, setCart }: any) {
               </button>
             </a>
           </div>
+
         </div>
         {/* WHAT WE DO */}
         <div className="py-20 px-7 lg:py-16 flex flex-col items-center">
@@ -295,11 +296,15 @@ function Home({ cart, setCart }: any) {
               <p className="text-sm leading-[19.6px] font-medium">- Wayne</p>
             </div>
           </div>
-          <button className="mt-10 w-fit text-center border-[0.8px] text-[#E72323] border-[#E72323] rounded-xl px-6 py-[14px]">
-            <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-              See more
-            </p>
-          </button>
+          <div className="flex mt-10 flex-row items-center justify-start">
+            <button className=" w-fit text-center border-[0.8px] text-[#E72323] border-[#E72323] rounded-xl px-6 py-[14px]">
+              <p className="text-sm leading-[14px] pt-[1px] font-semibold">
+                See more
+              </p>
+            </button>
+          </div>
+          <div className="trustpilot-widget mt-10" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="670f6b37a66db548f75afc07" data-style-height="52px" data-style-width="100%">
+          </div>
         </div>
         {/* CONTACT US */}
         <div
