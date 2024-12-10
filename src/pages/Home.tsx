@@ -84,12 +84,12 @@ function Home({ cart, setCart }: any) {
             </h2>
             <p className="mt-3 font-light text-sm leading-[19.6px] md:text-base md:leading-[22.4px]">
               … is to keep the ‘joy of cycling’ alive by delivering technically
-              superior tubeless tire sealant that keeps you rolling, not fixing.
+              superior tubeless tyre sealant that keeps you rolling, not fixing.
               We’re all about maximising your ride time and minimising those
               punctures that slow you down. But it’s more than just sealing
-              tires—it’s about building stronger connections, whether with
+              tyres—it’s about building stronger connections, whether with
               yourself, your family, or your friends. By taking the stress out
-              of tire repairs, we help you focus on what really matters: the
+              of tyre repairs, we help you focus on what really matters: the
               ride and the relationships you build along the way.
             </p>
           </div>
