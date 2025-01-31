@@ -164,11 +164,14 @@ function Home({ cart, setCart }: any) {
                       <button>Buy now</button>
                     </a> */}
                     <div className="w-1/2 relative">
-                      {notifications['item_1'] && <Notification />}                      <a
+                      {/*{notifications['item_1'] && <Notification />}*/}
+                      <a
+                        href="https://amzn.eu/d/cJdFOEV"
+                        target="_blank"
                         onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
                         className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
                       >
-                        <button>Add to cart</button>
+                        <button>Buy on Amazon</button>
                       </a>
                     </div>
                   </div>                </div>
@@ -190,13 +193,14 @@ function Home({ cart, setCart }: any) {
                       <button>Buy now</button>
                     </a> */}
                     <div className="w-1/2 relative">
-                      {notifications['item_2'] && <Notification />}
+                      {/*{notifications['item_2'] && <Notification />} */}
 
                       <a
-                        onClick={() => { updateCart('item_2', cart.item_2 + 1) }}
+                        href="https://amzn.eu/d/5njtpg5"
+                        target="_blank"
                         className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
                       >
-                        <button>Add to cart</button>
+                        <button>Buy on Amazon</button>
                       </a>
                     </div>
                   </div>

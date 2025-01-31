@@ -124,9 +124,9 @@ export default function Header({
           </div>
 
           <div className="flex flex-col text-[#F7F9FC] pl-6 text-base gap-2 ">
-            <Link to="/cart" className="w-full flex justify-start min-w-[200px]">
+            {/*<Link to="/cart" className="w-full flex justify-start min-w-[200px]">
               <p>Cart</p>
-            </Link>
+            </Link>*/}
 
             <a
               href="/"
@@ -178,7 +178,7 @@ export default function Header({
           </div>
         </div>
         <div className="flex flex-row w-full">
-          <p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none align-end">
+          {/*<p className="z-0 flex self-center justify-end w-full font-semibold text-center text-black select-none align-end">
             <Link to="/cart" className="flex flex-row">
               <img
                 src="/ShoppingCart.svg"
@@ -190,9 +190,9 @@ export default function Header({
                 <p></p>
               )}
             </Link>
-          </p>
+          </p>*/}
 
-          <p className="z-0 flex self-center w-fit justify-end ml-3 font-semibold text-center text-black select-none lg:hidden align-end">
+          <p className="z-0 flex self-center w-full justify-end ml-3 font-semibold text-center text-black select-none lg:hidden align-end">
             <button onClick={handleMenuClick}>
               <svg
                 ref={burgerMenuIcon}
