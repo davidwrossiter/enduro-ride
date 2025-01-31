@@ -13,7 +13,7 @@ export default function Header({
   const container = useRef<HTMLDivElement>(null);
   const burgerMenuIcon = useRef<SVGSVGElement>(null);
   const [internalState, setInternalState] = useState(false);
-  const [totalItems, setTotalItems] = useState(0);
+  //const [totalItems, setTotalItems] = useState(0);
 
   const handleMenuClick = () => {
     if (mobileMenuOpen) {
@@ -49,8 +49,8 @@ export default function Header({
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    const newTotal = cart.item_1 + cart.item_2;
-    setTotalItems(newTotal);
+    //const newTotal = cart.item_1 + cart.item_2;
+    //setTotalItems(newTotal);
   }, [cart]);
 
   return (

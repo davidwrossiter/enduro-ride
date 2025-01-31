@@ -2,12 +2,12 @@
 import Footer from "../components/Footer";
 // import FAQ from "../components/FAQ";
 import { useState, useEffect } from "react";
-import Notification from "../components/Notification";
+//import Notification from "../components/Notification";
 
 function Home({ cart, setCart }: any) {
   //const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [notifications, setNotifications] = useState<{ [key: string]: boolean }>({});
+  //const [notifications, setNotifications] = useState<{ [key: string]: boolean }>({});
   const imageSources = [
     "./Home/hero-image.png",
     "./Home/hero-image-2.png",
@@ -25,8 +25,8 @@ function Home({ cart, setCart }: any) {
       ...prevCart,
       [itemKey]: newCount
     }));
-    setNotifications(prev => ({ ...prev, [itemKey]: true }));
-    setTimeout(() => setNotifications(prev => ({ ...prev, [itemKey]: false })), 2000);
+    //setNotifications(prev => ({ ...prev, [itemKey]: true }));
+    //setTimeout(() => setNotifications(prev => ({ ...prev, [itemKey]: false })), 2000);
   };
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * imageSources.length);
