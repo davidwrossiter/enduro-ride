@@ -151,7 +151,7 @@ function Home({ cart, setCart }: any) {
                 <img src="red.JPG" className="border rounded-xl" draggable="false" />
                 <div className="mt-5">
                   <p className="font-semibold leading-4 pr-4">
-                    MTB EnduroSeal - 250ml Applicator Bottle & 2L Bottle
+                    MTB EnduroSeal - 250ml Applicator Bottle & 1L Bottle
                   </p>
                   <p className="mt-2 font-light text-sm leading-[19.6px]">
                     Premium tubeless sealant for mountain bikes.
@@ -180,7 +180,7 @@ function Home({ cart, setCart }: any) {
                 <img src="yellow.JPG" className="border rounded-xl" draggable="false" />
                 <div className="mt-5">
                   <p className="font-semibold leading-4 pr-4">
-                    Road & Gravel - 250ml Applicator Bottle & 2L Bottle
+                    Road & Gravel - 250ml Applicator Bottle & 1L Bottle
                   </p>
                   <p className="mt-2 font-light text-sm leading-[19.6px]">
                     Premium tubeless sealant for road and gravel bikes.
