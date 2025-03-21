@@ -1,13 +1,8 @@
-//import Header from "../components/Header";
 import Footer from "../components/Footer";
-// import FAQ from "../components/FAQ";
 import { useState, useEffect } from "react";
-//import Notification from "../components/Notification";
 
 function Home({ cart, setCart }: any) {
-  //const [scrollPosition, setScrollPosition] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  //const [notifications, setNotifications] = useState<{ [key: string]: boolean }>({});
   const imageSources = [
     "./Home/hero-image.png",
     "./Home/hero-image-2.png",
@@ -25,20 +20,12 @@ function Home({ cart, setCart }: any) {
       ...prevCart,
       [itemKey]: newCount
     }));
-    //setNotifications(prev => ({ ...prev, [itemKey]: true }));
-    //setTimeout(() => setNotifications(prev => ({ ...prev, [itemKey]: false })), 2000);
   };
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * imageSources.length);
     setCurrentImageIndex(randomIndex);
     setMobileMenuOpen(mobileMenuOpen);
   }, [imageSources.length]);
-
-  // <div
-  //   className={`${
-  //     mobileMenuOpen ? "overflow-hidden" : ""
-  //   } bg-[#F7F9FC] min-h-screen font-workSans`}
-  // >
 
   return (
     <div
@@ -157,14 +144,7 @@ function Home({ cart, setCart }: any) {
                     Premium tubeless sealant for mountain bikes.
                   </p>
                   <div className="mt-6 flex flex-row gap-3">
-                    {/*                    <a
-                      href="https://buy.stripe.com/14k14IebFgB09Hi5kk"
-                      className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
-                    >
-                      <button>Buy now</button>
-                    </a> */}
                     <div className="w-1/2 relative">
-                      {/*{notifications['item_1'] && <Notification />}*/}
                       <a
                         href="https://amzn.eu/d/cJdFOEV"
                         target="_blank"
@@ -186,15 +166,7 @@ function Home({ cart, setCart }: any) {
                     Premium tubeless sealant for road and gravel bikes.
                   </p>
                   <div className="mt-6 flex flex-row gap-3">
-                    {/* <a
-                      href="https://buy.stripe.com/5kA9BeaZtbgGbPq7st"
-                      className="w-1/2 border rounded-xl py-[14px] bg-[#E72323] border-[0.8] border-[#E72323] text-center text-white text-sm leading-[14px] font-semibold"
-                    >
-                      <button>Buy now</button>
-                    </a> */}
                     <div className="w-1/2 relative">
-                      {/*{notifications['item_2'] && <Notification />} */}
-
                       <a
                         href="https://amzn.eu/d/5njtpg5"
                         target="_blank"
@@ -206,65 +178,9 @@ function Home({ cart, setCart }: any) {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex flex-col items-start md:w-1/3">
-                <img src="./Home/enduro-seal-2.png" draggable="false" />
-                <div className="mt-5">
-                  <p className="font-semibold leading-4">MTB EnduroSeal - 1L</p>
-                  <p className="mt-2 font-light text-sm leading-[19.6px]">
-                    Premium tubeless sealant for mountain bikes.
-                  </p>
-                  <a href="/products/3">
-                    <p className="text-[#E72323] mt-3 text-sm leading-[14px]">
-                      Purchase
-                    </p>
-                  </a>
-                </div>
-              </div> */}
             </div>
-            {/*       <a href="/products">
-              <button
-                id="events"
-                className="mt-10 text-white text-center bg-[#E72323] rounded-xl px-6 py-[14px]"
-              >
-                <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-                  See all products
-                </p>
-              </button>
-            </a> */}
           </div>
         </div>
-        {/* EVENTS */}
-        {/* <div className="flex flex-col items-center pt-6 pb-20  max-w-[1230px] w-full">
-          <h5 className="font-bold text-[28px] leading-[28px] text-center">
-            Upcoming events
-          </h5>
-          <div className="w-full px-7 flex flex-row justify-center">
-            <div className="pt-8 flex flex-col w-full max-w-[500px]">
-              <img src="./Home/event-1.png" />
-              <div className="pt-5">
-                <p className="leading-4 font-semibold">
-                  London to Brighton Off Road Bike Ride 2024
-                </p>
-                <p className="mt-2 text-sm leading-[19.6px] font-light">
-                  9:30am & 10am waves open! Join thousands of riders taking on
-                  Europe’s largest charity mountain bike event to power
-                  lifesaving research.
-                </p>
-                <p className="mt-2 text-sm leading-[19.6px] font-semibold">
-                  21 September, 2024
-                </p>
-                <a href="#" target="_blank">
-                  <p
-                    id="testimonials"
-                    className="text-[#E72323] pt-4 font-semibold text-sm leading-[14px]"
-                  >
-                    See more
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
         {/* WHAT OTHERS ARE SAYING */}
         <div className="flex flex-col pt-6 pb-20 mx-7 ">
           <p className="text-sm leading-[14px] font-semibold">Testimonials</p>
@@ -315,25 +231,7 @@ function Home({ cart, setCart }: any) {
           id="faqs"
           className="pt-6 mb-[104px] px-7 w-full flex justify-center"
         >
-          {/* <div className="w-full max-w-[1230px] flex flex-col md:flex-row-reverse items-center justify-between">
-          <img src="./Home/contact-us.png" className="max-w-[572px]" />
-          <div>
-            <p className="font-bold text-[24px] leading-[24px] mt-8 md:text-[32px] md:leading-[32px]">
-              Contact us
-            </p>
-            <p className="text-sm font-light leading-[19.6px] mt-2">
-              We are happy to help with any questions that you might have!
-            </p>
-            <button className="mt-6 w-fit text-center text-white bg-[#E72323] rounded-xl px-6 py-[14px]">
-              <p className="text-sm leading-[14px] pt-[1px] font-semibold">
-                Contact
-              </p>
-            </button>
-          </div>
-        </div> */}
-          {/*<FAQ /> */}
         </div>
-
         {/* FOOTER */}
       </div>
       <Footer />
