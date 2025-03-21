@@ -25,8 +25,8 @@ function Footer() {
           <div className="flex flex-col">
             <p className="font-semibold">Legal</p>
             <div className="flex flex-col mt-3 gap-3 text-sm leading-[16.8px]">
-              <p>Terms and conditions</p>
-              <p>Privacy policy</p>
+              <a href="/terms">Terms and conditions</a>
+              <a href="/privacy">Privacy policy</a>
             </div>
           </div>
         </div>
