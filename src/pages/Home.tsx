@@ -81,52 +81,7 @@ function Home({ cart, setCart }: any) {
             </p>
           </div>
         </div>
-        {/* GET TO KNOW US */}
-        <div className="pt-6 pb-20 px-7 flex flex-col items-center w-full md:pt-20 md:pb-[104px]">
-          <div className="md:flex md:flex-row w-full max-w-[1230px] items-center md:justify-between">
-            <img
-              className="w-full md:max-w-[572px]"
-              src="./Home/get-to-know-us.png"
-              draggable="false"
-            />
-            <div className="md:pl-10 lg:pl-[88px] ">
-              <p className="text-[#757A7F] mt-10 md:mt-0 font-semibold text-sm leading-[14px] lg:text-lg lg:leading-[18px]">
-                About
-              </p>
-              <h3 className="mt-4 font-bold text-[28px] leading-[28px] lg:mt-10 lg:text-[32px] lg:leading-[32px] ">
-                Get to know us
-              </h3>
-              <div className="mt-3 max-w-[572px] flex flex-col gap-3 font-light text-sm leading-[19.6px] lg:text-base lg:leading-[22.4px]">
-                <p>
-                  <span className="font-medium">
-                    Born from a deep passion for cycling and community,
-                  </span>{" "}
-                  Enduro Seal was developed in South Africa with the aim of
-                  preventing riding downtime and the hassle associated with
-                  puncture repairs while maximising ride time and the
-                  relationships you build along the way.
-                </p>
-                <p>
-                  Our products are enjoyed by cyclists from all backgrounds
-                  ranging from the novice, fun-loving ‘every now and again’
-                  cyclist to the seasoned professional counting on Enduro Seal
-                  to keep them inflated over long distances. Having been
-                  rigorously tested on the most challenging cycling terrains in
-                  South Africa, ensuring durability and reliability, we are
-                  excited to make the Enduro brand of products available to you.
-                </p>
-              </div>
-              <a href="/#products">
-                <p
-                  id="products"
-                  className="text-[#E72323] mt-6 text-sm leading-[14px]"
-                >
-                  See products
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
+
         {/* PRODUCTS */}
         <div className="pt-10 pb-20 mx-7 flex flex-col items-center">
           <div className="w-full max-w-[1230px]">
@@ -178,6 +133,53 @@ function Home({ cart, setCart }: any) {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* GET TO KNOW US */}
+        <div className="pt-6 pb-20 px-7 flex flex-col items-center w-full md:pt-20 md:pb-[104px]">
+          <div className="md:flex md:flex-row w-full max-w-[1230px] items-center md:justify-between">
+            <img
+              className="w-full md:max-w-[572px]"
+              src="./Home/get-to-know-us.png"
+              draggable="false"
+            />
+            <div className="md:pl-10 lg:pl-[88px] ">
+              <p className="text-[#757A7F] mt-10 md:mt-0 font-semibold text-sm leading-[14px] lg:text-lg lg:leading-[18px]">
+                About
+              </p>
+              <h3 className="mt-4 font-bold text-[28px] leading-[28px] lg:mt-10 lg:text-[32px] lg:leading-[32px] ">
+                Get to know us
+              </h3>
+              <div className="mt-3 max-w-[572px] flex flex-col gap-3 font-light text-sm leading-[19.6px] lg:text-base lg:leading-[22.4px]">
+                <p>
+                  <span className="font-medium">
+                    Born from a deep passion for cycling and community,
+                  </span>{" "}
+                  Enduro Seal was developed in South Africa with the aim of
+                  preventing riding downtime and the hassle associated with
+                  puncture repairs while maximising ride time and the
+                  relationships you build along the way.
+                </p>
+                <p>
+                  Our products are enjoyed by cyclists from all backgrounds
+                  ranging from the novice, fun-loving ‘every now and again’
+                  cyclist to the seasoned professional counting on Enduro Seal
+                  to keep them inflated over long distances. Having been
+                  rigorously tested on the most challenging cycling terrains in
+                  South Africa, ensuring durability and reliability, we are
+                  excited to make the Enduro brand of products available to you.
+                </p>
+              </div>
+              <a href="/#products">
+                <p
+                  id="products"
+                  className="text-[#E72323] mt-6 text-sm leading-[14px]"
+                >
+                  See products
+                </p>
+              </a>
             </div>
           </div>
         </div>
