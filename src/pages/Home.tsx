@@ -182,7 +182,7 @@ function Home({ cart, setCart }: any) {
           </div>
         </div>
         {/* WHAT OTHERS ARE SAYING */}
-        <div className="flex flex-col pt-6 pb-20 mx-7 ">
+        <div className="flex flex-col mt-6 mb-20 mx-7" id="testimonials">
           <p className="text-sm leading-[14px] font-semibold">Testimonials</p>
           <h6 className="font-bold mt-4 text-[28px] leading-[28px]">
             What others are saying

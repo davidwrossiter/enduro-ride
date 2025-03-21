@@ -81,9 +81,6 @@ export default function Header({
               <a href="/#products" className="hover:cursor-pointer">
                 Products
               </a>
-              <a href="/#events" className="hover:cursor-pointer">
-                Events
-              </a>
               {/* <a href="/#plans" className="hover:cursor-pointer">
               Plans
             </a> */}
@@ -142,13 +139,7 @@ export default function Header({
             >
               Products
             </a>
-            <a
-              href="/#events"
-              className="w-full flex justify-start min-w-[200px]"
-              onClick={handleMenuClick}
-            >
-              Events
-            </a>
+
             {/* <a
             href="/#plans"
             className="w-full flex justify-start min-w-[200px]"

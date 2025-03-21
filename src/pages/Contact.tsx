@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="flex justify-center flex-col mt-12 min-h-screen">
+    <div className="flex justify-center flex-col pt-32 min-h-screen">
       <h1 className="w-full text-center text-3xl font-inter font-semibold">
         Contact us
       </h1>
