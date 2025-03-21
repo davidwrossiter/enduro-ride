@@ -206,8 +206,8 @@ function Home({ cart, setCart }: any) {
             </div>
             <div className="rounded-lg border-[0.8px] gap-2 p-6 h-fit flex max-w-[400px] flex-col bg-[#F9F9F9] border-[#E1E3E6]">
               <p className="text-sm leading-[19.6px] font-light">
-                I had the experience last weekend of testing enduro seal… and I
-                must say I was very impressed.
+                "I had the experience last weekend of testing enduro seal… and I
+                must say I was very impressed."
               </p>
               <p className="text-sm leading-[19.6px] font-medium">- Johann</p>
             </div>
