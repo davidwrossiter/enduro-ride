@@ -80,10 +80,11 @@ function Home({ cart, setCart }: any) {
               ride and the relationships you build along the way.
             </p>
           </div>
+          <p id="products"></p>
         </div>
 
         {/* PRODUCTS */}
-        <div className="pt-10 pb-20 mx-7 flex flex-col items-center">
+        <div className="pt-10 pb-20 mx-7 flex flex-col items-center" >
           <div className="w-full max-w-[1230px]">
             <h4 className="font-bold text-[28px] leading-[28px]">
               Our products
@@ -104,7 +105,7 @@ function Home({ cart, setCart }: any) {
                         href="https://amzn.eu/d/cJdFOEV"
                         target="_blank"
                         onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
-                        className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                        className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
                       >
                         <button>Buy on Amazon</button>
                       </a>
@@ -125,7 +126,7 @@ function Home({ cart, setCart }: any) {
                       <a
                         href="https://amzn.eu/d/5njtpg5"
                         target="_blank"
-                        className="w-full border hover:cursor-pointer rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                        className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
                       >
                         <button>Buy on Amazon</button>
                       </a>
@@ -174,7 +175,7 @@ function Home({ cart, setCart }: any) {
               </div>
               <a href="/#products">
                 <p
-                  id="products"
+                  id="testimonials"
                   className="text-[#E72323] mt-6 text-sm leading-[14px]"
                 >
                   See products
@@ -184,7 +185,7 @@ function Home({ cart, setCart }: any) {
           </div>
         </div>
         {/* WHAT OTHERS ARE SAYING */}
-        <div className="flex flex-col mt-6 mb-20 mx-7" id="testimonials">
+        <div className="flex flex-col mt-6 mb-20 mx-7">
           <p className="text-sm leading-[14px] font-semibold">Testimonials</p>
           <h6 className="font-bold mt-4 text-[28px] leading-[28px]">
             What others are saying
