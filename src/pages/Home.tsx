@@ -84,52 +84,54 @@ function Home({ cart, setCart }: any) {
         </div>
 
         {/* PRODUCTS */}
-        <div className="pt-10 pb-20 mx-7 flex flex-col items-center" >
-          <div className="w-full max-w-[1230px]">
-            <h4 className="font-bold text-[28px] leading-[28px]">
-              Our products
-            </h4>
-            <div className="flex flex-col mt-8 gap-10 md:gap-4 md:flex-row">
-              <div className="flex flex-col items-start md:w-1/2">
-                <img src="red.JPG" className="border rounded-xl" draggable="false" />
-                <div className="mt-5">
-                  <p className="font-semibold leading-4 pr-4">
-                    MTB EnduroSeal - 250ml Applicator Bottle & 1L Bottle
-                  </p>
-                  <p className="mt-2 font-light text-sm leading-[19.6px]">
-                    Premium tubeless sealant for mountain bikes.
-                  </p>
-                  <div className="mt-6 flex flex-row gap-3">
-                    <div className="w-1/2 relative">
-                      <a
-                        href="https://amzn.eu/d/cJdFOEV"
-                        target="_blank"
-                        onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
-                        className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
-                      >
-                        <button>Buy on Amazon</button>
-                      </a>
-                    </div>
-                  </div>                </div>
-              </div>
-              <div className="flex flex-col items-start md:w-1/2">
-                <img src="yellow.JPG" className="border rounded-xl" draggable="false" />
-                <div className="mt-5">
-                  <p className="font-semibold leading-4 pr-4">
-                    Road & Gravel - 250ml Applicator Bottle & 1L Bottle
-                  </p>
-                  <p className="mt-2 font-light text-sm leading-[19.6px]">
-                    Premium tubeless sealant for road and gravel bikes.
-                  </p>
-                  <div className="mt-6 flex flex-row gap-3">
-                    <div className="w-1/2 relative">
-                      <a
-                        href="https://amzn.eu/d/5njtpg5"
-                        target="_blank"
-                        className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
-                      >
-                        <button>Buy on Amazon</button>
-                      </a>
+        <div className="pt-10 pb-20 mx-7 flex flex-col justify-center items-center" >
+          <div>
+            <div className="w-full max-w-[1230px]">
+              <h4 className="font-bold text-[28px] text-center leading-[28px]">
+                Our products
+              </h4>
+              <div className="flex flex-col mt-8 gap-10 md:gap-4 md:flex-row">
+                <div className="flex flex-col items-start md:w-1/2 max-w-[360px]">
+                  <img src="red.JPG" className="border rounded-xl" draggable="false" />
+                  <div className="mt-5">
+                    <p className="font-semibold leading-4 pr-4">
+                      MTB EnduroSeal - 250ml Applicator Bottle & 1L Bottle
+                    </p>
+                    <p className="mt-2 font-light text-sm leading-[19.6px]">
+                      Premium tubeless sealant for mountain bikes.
+                    </p>
+                    <div className="mt-6 flex flex-row gap-3">
+                      <div className="w-1/2 relative">
+                        <a
+                          href="https://amzn.eu/d/cJdFOEV"
+                          target="_blank"
+                          onClick={() => { updateCart('item_1', cart.item_1 + 1) }}
+                          className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                        >
+                          <button>Buy on Amazon</button>
+                        </a>
+                      </div>
+                    </div>                </div>
+                </div>
+                <div className="flex flex-col items-start md:w-1/2 max-w-[360px]">
+                  <img src="yellow.JPG" className="border rounded-xl" draggable="false" />
+                  <div className="mt-5">
+                    <p className="font-semibold leading-4 pr-4">
+                      Road & Gravel - 250ml Applicator Bottle & 1L Bottle
+                    </p>
+                    <p className="mt-2 font-light text-sm leading-[19.6px]">
+                      Premium tubeless sealant for road and gravel bikes.
+                    </p>
+                    <div className="mt-6 flex flex-row gap-3">
+                      <div className="w-1/2 relative">
+                        <a
+                          href="https://amzn.eu/d/5njtpg5"
+                          target="_blank"
+                          className="w-full border hover:cursor-pointer hover:bg-[#E72323]/5 rounded-xl py-[14px] border-[0.8] border-[#E72323] text-center text-[#E72323] text-sm leading-[14px] font-semibold block"
+                        >
+                          <button>Buy on Amazon</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -186,7 +188,7 @@ function Home({ cart, setCart }: any) {
         </div>
         {/* WHAT OTHERS ARE SAYING */}
         <div className="flex flex-col mt-6 mb-20 mx-7">
-          <p className="text-sm leading-[14px] font-semibold">Testimonials</p>
+          <p className="text-sm leading-[14px] font-semibold">Reviews</p>
           <h6 className="font-bold mt-4 text-[28px] leading-[28px]">
             What others are saying
           </h6>
